@@ -3,7 +3,7 @@
 <% @student_list.each do |student| %>
   <p>First Name: <%= student.first_name %></p>
   <p>Last Name: <%= student.last_name %></p>
-  <p>House Name: <%= student.house_id %></p>
+  <p>House Name: <%= student.house.name.capitalize %></p>
   <p>Age: <%= student.age %></p>
   <hr />
 <% end %>
