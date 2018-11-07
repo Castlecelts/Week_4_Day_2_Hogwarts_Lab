@@ -5,7 +5,10 @@ require_relative('models/house')
 also_reload('./models/*')
 
 # index
-
+get '/hogwarts' do
+  @student_list = Student.all()
+  erb(:index)
+end
 # show
 
 # new
