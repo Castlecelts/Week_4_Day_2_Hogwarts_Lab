@@ -3,7 +3,7 @@ require('sinatra/contrib/all')
 require_relative('models/student')
 require_relative('models/house')
 also_reload('./models/*')
-
+# ate
 # index
 get '/hogwarts' do
   @student_list = Student.all()
