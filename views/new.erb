@@ -14,7 +14,7 @@
 <select name="house_id" id="house-select">
 
   <% @houses.each do |house| %>
-    <option value="<%= house.name.capitalize %>"><%= house.name.capitalize %></option>
+    <option value="<%= house.id %>"><%= house.name.capitalize %></option>
   <% end %>
   <!-- <option value="1">Gryffindor</option>
   <option value="2">Hufflepuff</option>
